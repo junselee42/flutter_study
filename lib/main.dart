@@ -34,6 +34,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -48,180 +49,125 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+      body: ListView(
+        padding: EdgeInsets.all(30),
+        children: [
+          Card(
+            child: ListTile(
+              title: Text('One-line ListTile'),
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-            const SizedBox(height: height),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                  child: Text("stuty_00"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  },
-                  child: Text("stuty_01"),
-                ),
-              ],
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
             ),
-          ],
-        ),
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제00'),
+              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/first');
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
