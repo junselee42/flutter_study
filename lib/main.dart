@@ -74,6 +74,17 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('과제02'),
+              subtitle: Text('세번째 과제에 대한 설명.'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/third');
+              },
+            ),
+          ),
         ],
       ),
     );
