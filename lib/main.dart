@@ -54,14 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Card(
             child: ListTile(
-              title: Text('One-line ListTile'),
-            ),
-          ),
-          Card(
-            child: ListTile(
               leading: FlutterLogo(),
               title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              subtitle: Text('첫번째 과제에 대한 설명'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/first');
@@ -71,99 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
+              title: Text('과제01'),
+              subtitle: Text('두번째 과제에 대한 설명.'),
               hoverColor: Colors.purple,
               onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('타이틀에 대한 조금 더 자세한 내용이 들어가고...'),
-              hoverColor: Colors.purple,
-              onTap: (){
-                Navigator.of(context).pushNamed('/first');
+                Navigator.of(context).pushNamed('/second');
               },
             ),
           ),
