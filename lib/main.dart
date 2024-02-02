@@ -55,8 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: FlutterLogo(),
-              title: Text('과제00'),
-              subtitle: Text('첫번째 과제에 대한 설명'),
+              title: Text('예제_카운트'),
+              subtitle: Text('버튼을 눌러 숫자를 올리자'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/first');
@@ -66,8 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: FlutterLogo(),
-              title: Text('과제01'),
-              subtitle: Text('두번째 과제에 대한 설명.'),
+              title: Text('예제_체인지'),
+              subtitle: Text('버튼을 눌러 텍스트 내용을 바꾼다'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/second');
