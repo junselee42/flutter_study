@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListTile(
               leading: FlutterLogo(),
               title: Text('예제_카운트'),
-              subtitle: Text('버튼을 눌러 숫자를 올리자'),
+              subtitle: Text('버튼을 눌러 숫자 카운트해보기'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/first');
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListTile(
               leading: FlutterLogo(),
               title: Text('예제_체인지'),
-              subtitle: Text('버튼을 눌러 텍스트 내용을 바꾼다'),
+              subtitle: Text('버튼을 눌러 텍스트 내용을 바꿔보기'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/second');
@@ -77,8 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: FlutterLogo(),
-              title: Text('과제02'),
-              subtitle: Text('세번째 과제에 대한 설명.'),
+              title: Text('예제_스크롤'),
+              subtitle: Text('SingleChildScrollView 사용해보기'),
               hoverColor: Colors.purple,
               onTap: (){
                 Navigator.of(context).pushNamed('/third');

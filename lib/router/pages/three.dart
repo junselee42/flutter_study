@@ -10,8 +10,15 @@ class ThreePage extends StatefulWidget {
 class _ThreePageState extends State<ThreePage> {
   @override
   Widget build(BuildContext context) {
+    final items = List.generate(100, (index) => index).toList();
     return Scaffold(
-      appBar: AppBar(title: Text("위젯02"),),
+      appBar: AppBar(title: Text(widget.toString()),),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(15),
+        child: ListBody(
+          children: items.map((index) => Text('$index')).toList(),
+        ),
+      ),
     );
   }
 }
