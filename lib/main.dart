@@ -85,6 +85,17 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('예제_리스트뷰'),
+              subtitle: Text('ListView와 ListTile 사용해보기'),
+              hoverColor: Colors.purple,
+              onTap: (){
+                Navigator.of(context).pushNamed('/fourth');
+              },
+            ),
+          )
         ],
       ),
     );
