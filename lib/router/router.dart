@@ -4,6 +4,7 @@ import 'package:flutter00/router/pages/one.dart';
 import 'package:flutter00/router/pages/two.dart';
 import 'package:flutter00/router/pages/three.dart';
 import 'package:flutter00/router/pages/four.dart';
+import 'package:flutter00/router/pages/five.dart';
 
 final routes = {
   '/': (BuildContext context) => const MyHomePage(title: "Main"),
@@ -11,4 +12,5 @@ final routes = {
   '/second': (BuildContext context) => const TwoPage(),
   '/third': (BuildContext context) => const ThreePage(),
   '/fourth': (BuildContext context) => const FourPage(),
+  '/fifth': (BuildContext context) => const FivePage(),
 };
