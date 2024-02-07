@@ -120,6 +120,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pushNamed('/sixth');
               },
             ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day7_아.. 못했다'),
+              subtitle: const Text('하...'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/sixth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day8_'),
+              subtitle: const Text(''),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/sixth');
+              },
+            ),
           )
         ],
       ),
