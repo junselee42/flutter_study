@@ -135,11 +135,11 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
-              title: const Text('Day8_'),
-              subtitle: const Text(''),
+              title: const Text('Day8_페이지 뷰'),
+              subtitle: const Text('PageView 사용해 보기'),
               hoverColor: Colors.purple,
               onTap: () {
-                Navigator.of(context).pushNamed('/seventh');
+                Navigator.of(context).pushNamed('/eighth');
               },
             ),
           )
