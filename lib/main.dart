@@ -142,6 +142,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pushNamed('/eighth');
               },
             ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day9_다이얼로그'),
+              subtitle: const Text('AlertDialog 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/ninth');
+              },
+            ),
           )
         ],
       ),
