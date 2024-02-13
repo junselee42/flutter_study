@@ -9,6 +9,7 @@ import 'package:flutter00/router/pages/six.dart';
 import 'package:flutter00/router/pages/seven.dart';
 import 'package:flutter00/router/pages/eight.dart';
 import 'package:flutter00/router/pages/nine.dart';
+import 'package:flutter00/router/pages/ten.dart';
 
 final routes = {
   '/': (BuildContext context) => const MyHomePage(title: "Main"),
@@ -21,4 +22,5 @@ final routes = {
   '/seventh': (BuildContext context) => const SevenPage(),
   '/eighth': (BuildContext context) => const EightPage(),
   '/ninth': (BuildContext context) => const NinePage(),
+  '/tenth': (BuildContext context) => const TenPage(),
 };

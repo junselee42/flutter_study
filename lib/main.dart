@@ -46,10 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     const double height = 20;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme
-            .of(context)
-            .colorScheme
-            .inversePrimary,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: ListView(
@@ -151,6 +148,17 @@ class _MyHomePageState extends State<MyHomePage> {
               hoverColor: Colors.purple,
               onTap: () {
                 Navigator.of(context).pushNamed('/ninth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day10_커스텀위젯'),
+              subtitle: const Text('위젯 커스텀 해서 UI 구성 하기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/tenth');
               },
             ),
           )
