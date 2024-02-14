@@ -161,6 +161,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pushNamed('/tenth');
               },
             ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day11_이미지'),
+              subtitle: const Text('이미지 삽입하기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/eleventh');
+              },
+            ),
           )
         ],
       ),
