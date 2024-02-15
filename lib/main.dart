@@ -55,99 +55,22 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
-              title: const Text('Day1_카운트'),
-              subtitle: const Text('버튼을 눌러 숫자 카운트 하기'),
+              title: const Text('Day12_데이트 피커'),
+              subtitle: const Text('DatePicker 사용하기'),
               hoverColor: Colors.purple,
               onTap: () {
-                Navigator.of(context).pushNamed('/first');
+                Navigator.of(context).pushNamed('/twelfth');
               },
             ),
           ),
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
-              title: const Text('Day2_체인지'),
-              subtitle: const Text('버튼을 눌러 텍스트 내용을 바꾸기'),
+              title: const Text('Day11_이미지'),
+              subtitle: const Text('이미지 삽입하기'),
               hoverColor: Colors.purple,
               onTap: () {
-                Navigator.of(context).pushNamed('/second');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day3_스크롤'),
-              subtitle: const Text('SingleChildScrollView 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/third');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day4_리스트 뷰'),
-              subtitle: const Text('ListView와 ListTile 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/fourth');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day5_드롭 다운 버튼'),
-              subtitle: const Text('map 리스트를 활용해 위젯리스트로 바꾸기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/fifth');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day6_텍스트 필드'),
-              subtitle: const Text('TextField 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/sixth');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day7_그리드 뷰 '),
-              subtitle: const Text('GridView 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/seventh');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day8_페이지 뷰'),
-              subtitle: const Text('PageView 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/eighth');
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: const FlutterLogo(),
-              title: const Text('Day9_다이얼로그'),
-              subtitle: const Text('AlertDialog 사용해 보기'),
-              hoverColor: Colors.purple,
-              onTap: () {
-                Navigator.of(context).pushNamed('/ninth');
+                Navigator.of(context).pushNamed('/eleventh');
               },
             ),
           ),
@@ -165,14 +88,102 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
-              title: const Text('Day11_이미지'),
-              subtitle: const Text('이미지 삽입하기'),
+              title: const Text('Day9_다이얼로그'),
+              subtitle: const Text('AlertDialog 사용해 보기'),
               hoverColor: Colors.purple,
               onTap: () {
-                Navigator.of(context).pushNamed('/eleventh');
+                Navigator.of(context).pushNamed('/ninth');
               },
             ),
-          )
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day8_페이지 뷰'),
+              subtitle: const Text('PageView 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/eighth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day7_그리드 뷰 '),
+              subtitle: const Text('GridView 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/seventh');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day6_텍스트 필드'),
+              subtitle: const Text('TextField 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/sixth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day5_드롭 다운 버튼'),
+              subtitle: const Text('map 리스트를 활용해 위젯리스트로 바꾸기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/fifth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day4_리스트 뷰'),
+              subtitle: const Text('ListView와 ListTile 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/fourth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day3_스크롤'),
+              subtitle: const Text('SingleChildScrollView 사용해 보기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/third');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day2_체인지'),
+              subtitle: const Text('버튼을 눌러 텍스트 내용을 바꾸기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/second');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day1_카운트'),
+              subtitle: const Text('버튼을 눌러 숫자 카운트 하기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/first');
+              },
+            ),
+          ),
         ],
       ),
     );
