@@ -55,6 +55,17 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
+              title: const Text('Day13_슬라이더'),
+              subtitle: const Text('Slider 사용하기'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/thirteenth');
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
               title: const Text('Day12_데이트 피커'),
               subtitle: const Text('DatePicker 사용하기'),
               hoverColor: Colors.purple,
