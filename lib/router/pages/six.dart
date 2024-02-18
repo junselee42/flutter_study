@@ -17,13 +17,12 @@ class _SixPageState extends State<SixPage> {
         body: const Padding(
           padding: EdgeInsets.all(18.0),
           child: Center(
-            child: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "여기에 내용을 입력하세요",
-              ),
-            )
-          ),
+              child: TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: "여기에 내용을 입력하세요",
+            ),
+          )),
         ));
   }
 }

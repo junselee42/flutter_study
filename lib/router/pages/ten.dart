@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-void buttonPressed ()
-{
+void buttonPressed() {
   print("버튼이 눌렸다");
 }
 

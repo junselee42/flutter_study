@@ -12,7 +12,9 @@ class _ThreePageState extends State<ThreePage> {
   Widget build(BuildContext context) {
     final items = List.generate(100, (index) => index).toList();
     return Scaffold(
-      appBar: AppBar(title: Text(widget.toString()),),
+      appBar: AppBar(
+        title: Text(widget.toString()),
+      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(15),
         child: ListBody(

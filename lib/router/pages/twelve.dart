@@ -9,6 +9,7 @@ class TwelvePage extends StatefulWidget {
 
 class _TwelvePageState extends State<TwelvePage> {
   DateTime? selectedTime;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,9 +30,9 @@ class _TwelvePageState extends State<TwelvePage> {
                     firstDate: DateTime(2024),
                     lastDate: DateTime(2030),
                     builder: (BuildContext context, Widget? child) => Theme(
-                        data: ThemeData.dark(),
-                        child: child!,
-                      ),
+                      data: ThemeData.dark(),
+                      child: child!,
+                    ),
                   );
                   if (selectedDate != null) {
                     setState(() => selectedTime = selectedDate);

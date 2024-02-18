@@ -10,11 +10,12 @@ class OnePage extends StatefulWidget {
 class _OnePageState extends State<OnePage> {
   int _counter = 0;
 
-  void _incrementCounter(){
+  void _incrementCounter() {
     setState(() {
       _counter++;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,14 +26,19 @@ class _OnePageState extends State<OnePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              "버튼을 눌러라"
-            ),
-            Text('$_counter', style: Theme.of(context).textTheme.headlineLarge,)
+            const Text("버튼을 눌러라"),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineLarge,
+            )
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: _incrementCounter, tooltip: "Increment", child: Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: "Increment",
+        child: Icon(Icons.add),
+      ),
     );
   }
 }

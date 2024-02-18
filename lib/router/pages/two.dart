@@ -26,13 +26,11 @@ class _TwoPageState extends State<TwoPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            if(_text != "world") {
+            if (_text != "world") {
               _text = "world";
-            }
-            else{
+            } else {
               _text = "hello";
             }
-
           });
         },
         child: Icon(Icons.text_snippet_outlined),
