@@ -55,8 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
-              title: const Text('Day15_??'),
-              subtitle: const Text('위젯 사용하기'),
+              title: const Text('Day15_탭바'),
+              subtitle: const Text('TabBar 위젯 구성하고 사용하기'),
               hoverColor: Colors.purple,
               onTap: () {
                 Navigator.of(context).pushNamed('/fifteenth');
