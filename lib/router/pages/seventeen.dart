@@ -14,7 +14,7 @@ class SeventeenPage extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HeroDetailPage()),
+              MaterialPageRoute(builder: (context) => const HeroDetailPage()),
             );
           },
           child: Hero(
