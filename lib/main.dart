@@ -33,13 +33,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +45,17 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         padding: const EdgeInsets.all(30),
         children: [
+          Card(
+            child: ListTile(
+              leading: const FlutterLogo(),
+              title: const Text('Day20_SliverAppBar'),
+              subtitle: const Text('앱바 애니메이션으로 확대랑 축소하는 법'),
+              hoverColor: Colors.purple,
+              onTap: () {
+                Navigator.of(context).pushNamed('/twentieth');
+              },
+            ),
+          ),
           Card(
             child: ListTile(
               leading: const FlutterLogo(),
