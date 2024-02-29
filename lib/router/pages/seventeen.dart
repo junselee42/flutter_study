@@ -47,4 +47,3 @@ class HeroDetailPage extends StatelessWidget {
     );
   }
 }
-

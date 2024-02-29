@@ -23,13 +23,13 @@ class _SixteenPageState extends State<SixteenPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   print("msg : on tap !");
                 },
                 child: const Text("click !"),
               ),
               InkWell(
-                onTap: (){
+                onTap: () {
                   print("msg : inkwell !");
                 },
                 child: const Text("click !"),
@@ -37,7 +37,6 @@ class _SixteenPageState extends State<SixteenPage> {
             ],
           ),
         ),
-
       ),
     );
   }

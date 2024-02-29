@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TwentyPage extends StatefulWidget {
   const TwentyPage({super.key});
 
@@ -19,8 +18,10 @@ class _TwentyPageState extends State<TwentyPage> {
             expandedHeight: 180.0,
             flexibleSpace: FlexibleSpaceBar(
               title: const Text('Sliver'),
-              background: Image.asset('assets/images/image_test.png',
-              fit: BoxFit.cover,),
+              background: Image.asset(
+                'assets/images/image_test.png',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           const SliverFillRemaining(

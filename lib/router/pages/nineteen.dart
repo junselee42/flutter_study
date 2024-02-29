@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:dio/dio.dart';
 
-
 final dio = Dio();
 
 void getHttp() async {
-  final response = await dio.get('https://jsonplaceholder.typicode.com/todos/1');
+  final response =
+      await dio.get('https://jsonplaceholder.typicode.com/todos/1');
   print('Dio response : $response');
 }
 
