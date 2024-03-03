@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'twentyone.dart';
 
 class TwentyTwoPage extends StatefulWidget {
   const TwentyTwoPage({super.key});
@@ -15,7 +16,16 @@ class _TwentyTwoPageState extends State<TwentyTwoPage> {
       appBar: AppBar(
         title: Text(widget.toString()),
       ),
-      body: Container(),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Day21로'),
+          onPressed: (){
+            Navigator.push(
+              context, MaterialPageRoute(builder: (context)=> const TwentyOnePage())
+            );
+          },
+        ),
+      ),
     );
   }
 }
