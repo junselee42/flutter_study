@@ -14,7 +14,16 @@ class _TwentyFourPageState extends State<TwentyFourPage> {
       appBar: AppBar(
         title: Text(widget.toString()),
       ),
-      body: Center(),
+      body: const Center(
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: 'input',
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
