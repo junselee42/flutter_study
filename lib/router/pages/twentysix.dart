@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:skeletons/skeletons.dart';
 
 class TwentySixPage extends StatefulWidget {
   const TwentySixPage({super.key});
@@ -9,8 +8,6 @@ class TwentySixPage extends StatefulWidget {
 }
 
 class _TwentySixPageState extends State<TwentySixPage> {
-  final _isLoading = true;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +15,24 @@ class _TwentySixPageState extends State<TwentySixPage> {
         title: Text(widget.toString()),
       ),
       body: Center(
-        child: Text('삽입예정'),
+        child: ElevatedButton(
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text("(예시) 저장되었습니다"),
+                backgroundColor: Colors.deepPurpleAccent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: BorderSide(
+                    color: Colors.purpleAccent,
+                    width: 1,
+                  )
+                ),
+              ),
+            );
+          },
+          child: Text("(예시) 저장하기"),
+        ),
       ),
     );
   }
