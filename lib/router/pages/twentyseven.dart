@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 
 class TwentySevenPage extends StatefulWidget {
   const TwentySevenPage({super.key});
@@ -8,15 +9,24 @@ class TwentySevenPage extends StatefulWidget {
 }
 
 class _TwentySevenPageState extends State<TwentySevenPage> {
+  GlobalKey<SliderDrawerState> _key = GlobalKey<SliderDrawerState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.toString()),
+        body: SafeArea(
+      child: SliderDrawer(
+        key: _key,
+        appBar: SliderAppBar(
+          appBarColor: Colors.white,
+          title: Text(
+            'SliderDrawer',
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
+          ),
+        ),
+        slider: Container(color: Colors.red),
+        child: Container(color: Colors.blue),
       ),
-      body: Center(
-        child: Text("삽입예정"),
-      ),
-    );
+    ));
   }
 }
