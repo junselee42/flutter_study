@@ -58,5 +58,5 @@ final routes = {
   '/twentyfifth': (BuildContext context) => const TwentyFivePage(),
   '/twentysixth': (BuildContext context) => const TwentySixPage(),
   '/twentyseventh': (BuildContext context) => const TwentySevenPage(),
-  '/twentyseighth': (BuildContext context) => const TwentyEightPage(),
+  '/twentyeighth': (BuildContext context) => const TwentyEightPage(),
 };
