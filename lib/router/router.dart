@@ -29,6 +29,7 @@ import 'package:flutter00/router/pages/twentysix.dart';
 import 'package:flutter00/router/pages/twentyseven.dart';
 import 'package:flutter00/router/pages/twentyeight.dart';
 import 'package:flutter00/router/pages/twentynine.dart';
+import 'package:flutter00/router/pages/thirty.dart';
 
 final routes = {
   '/': (BuildContext context) => const MyHomePage(title: "Main"),
@@ -61,4 +62,5 @@ final routes = {
   '/twentyseventh': (BuildContext context) => const TwentySevenPage(),
   '/twentyeighth': (BuildContext context) => const TwentyEightPage(),
   '/twentyninth': (BuildContext context) => const TwentyNinePage(),
+  '/thirtieth': (BuildContext context) => const ThirtyPage(),
 };
